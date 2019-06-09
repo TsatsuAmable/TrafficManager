@@ -1,4 +1,6 @@
-What Problem am I trying to Solve?
+# Traffic Manager1.0
+
+**What Problem am I trying to Solve?**
 
 Most of the roads I have to travel use dumb traffic light controllers that are not connected to anynetwork or coordinated by some intelligent realt-time adaptable system. This means that these systems are not able to respond smartly to emerging problems on the roads.
 The efects of such inefficient traffic networks include:
@@ -12,7 +14,7 @@ These roads need a smart system to solve this problem. Such smart systems may re
 
 This problem of cost (there is always a problem of cost) is likely why many governements in the developing world have yet to swithc over to computer controlled systems. Road networks are huge and extensive. Any major change to road infrastructure runs into millions of dollars. 
 
-How TrafficManager will Solve the problem?
+**How TrafficManager will Solve the problem?**
 
 Classes/ Architecture
 Node		--> singleton that houses the whole infrastructure. Able to receive configuration via txt file some other data 				store
