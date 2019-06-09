@@ -14,67 +14,14 @@ This problem of cost (there is always a problem of cost) is likely why many gove
 
 How TrafficManager will Solve the problem?
 
-Node			--> Houses the whole infrastructure. Able to receive configuration via txt file
-SignalColour	--> signal colour
-SignalController--> Change Signal Colour
-SignalTimer		--> determine time interval to next signal change
-DataLogger		--> epoch time, vehicle count, vehicle type
-RoadState		--> will collect roadstate information:: 
-					computer vision & induction loops & radar gun input.
-					final format not yet known, but will store epoch time, vehicle count, vehicle type
-					
-http://docs.cppmicroservices.org/en/stable/doc/man/cppmicroservices-webconsole.7.html
+Classes/ Architecture
+Node		--> singleton that houses the whole infrastructure. Able to receive configuration via txt file some other data 				store
+SignalColour	--> provides hardware coding for signal colour
 
-https://www.boost.org/doc/libs/1_62_0/doc/html/date_time/examples.html					
-					
-					boost asio
-					
-					boost atomic
-					
-					boost chrono
-					
-					container hash
-					datetime
-					
-					exception
-					
-					filesystem
-					
-					flyweight
-					
-					foreach
-					
-					function
-					
-					geometry
-					
-					
-					graph for grok
-					
-					iterator
-					
-					lambda
-					
-					Log
-					
-					Math statistical distributions
-					
-					MPI
-					
-					Odeint ..ordinary differential equations... rate of change of traffic flow
-					
-					program options
-					
-					property tree
-					
-					serialization
-					
-					test
-					
-					uuid
-					
-					
-					
-					NMEA library
+SignalController--> Change Signal Colour
+SignalTimer		--> determine time interval to next signal change based at first on some simple algorithm, and eventually 				on a ML model
+DataLogger		--> epoch time, vehicle count, vehicle type
+RoadState		--> will collect roadstate information:: computer vision & induction loops & radar gun input.
+					final format not yet known, but will store epoch time, vehicle count, vehicle type
 					
 					
